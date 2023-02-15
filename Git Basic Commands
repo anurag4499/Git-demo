@@ -1,0 +1,67 @@
+Vi filename : to directly edit
+
+Git config --global user.name
+
+1 code .  >This for vs code open in desired folder.
+
+2 ls -lsrt   >This is for all files present in folder including hidden files 
+
+3 touch filename ->This will create blank file. 
+
+4 git -A   >This is for adding all the files to staging area..
+
+git reset filename single file ke liye इससे staging Area se vapas untracked me ja sakte hai
+
+git reset    for all files
+
+5 git commit   >This will open vim editor 
+
+6 git checkout filename >This will   Recover the last commit.
+
+7 git checkout -f:  >for matching if more file disturb
+
+8 git log  >This for checking what we have committed
+
+9 git log -2: This will show last two commit.
+
+10 git diff: This Compare working directory with staging area 
+
+11 git diff --staged: Staging area ko last commit se compare Krna h to 
+
+git rm --cached: Staging area se untracked ke liye yadi galti se file add kr diya aur chate h ki harddisk men rhe..
+
+git status -s: for summarised changed
+
+12 git branch  branch name 
+
+13 git branch  checkout branch name:
+
+Isse hum branch me switch kr sakte hai 
+
+14 git merge branch name: but sabse phle master branch me switch Krna hai..
+
+git checkout -b: branch name isse hum creation ke sath branch me direct switch kr sakte hai..
+
+15 git remote set url origin url-link
+
+Url change krne ke liye 
+
+16 git checkout branch-name: branch me switch krne ke bad push krege to branch add ho Jayega 
+
+17 git push -u origin master ek baar kr diya uske baad jab direct(git  push) push krenge to master me hi push honga
+
+18 git clone clone-url sath me folder name to jyada achha rhenga. Isse   clone ho jayenga 
+
+19 When there is a situation when you forget to add some files to commit and want to undo any commit, it can be commit again using --ammend
+
+git commit --amend
+
+20. git remote remove origin   इससे हम सेट किए हुए url ko remove kr sakte hai
+
+origin ka matlab hai url ki hume बार baar na likhna pade 
+
+21.Folder ko ignore krne ke liye .gitigonore file me folderName/
+
+करके daal denge to ignore ho जाएंगे.
+
+22. *.file_extension एक जैसे files ko ignore krna ho to
