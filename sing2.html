@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./sing2.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="d-flex h-100">
+            <div class="side-nav position-relative d-flex justify-content-end align-items-center d-none d-md-block">
+                <div class="side-main-content">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <ul class="d-flex flex-column justify-content-between gap-5">
+                            <li class="steps" *ngFor="let items of nav_items">
+                                <div class="steps-div d-flex align-items-center">
+                                    <span class="fw-semibold span-number"
+                                        [ngClass]="{'active': items.state}">{{items.no}}</span>
+                                    <div class="ms-2">
+                                        <p class="text-danger fw-semibold text-xs">{{items.step}}</p>
+                                        <p class="fw-bold fs-5">{{items.title}}</p>
+                                        <p class="text-xs text-white">{{items.subtitle}}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-div d-flex justify-content-md-start justify-content-center align-items-center">
+
+                   
+                <div class="form-main-content px-md-4 pt-md-3 bg-none ">
+                    <div class="mobile-progress-bar   d-md-none " >
+                        <div class="msteps-div ps-3  d-flex align-items-center">
+                            <span class="fw-semibold mspan-number"> 1</span>
+                               </span>
+                            <div class="ms-2">
+                                <p class="text-danger fw-semibold text-xs">step 1</p>
+                                <p class="fw-bold fs-5">Personal Details</p>
+                                <p class="text-xs text-white">etyuinm,</p>
+                            </div>
+                            <div class="ps-5">
+                                <p class="fs-1 text-white">1/4</p>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="first px-3 pt-3 pt-md-0 ">
+
+                        <p class="fs-3  fw-bold text-blue d-flex flex-column lh-1 d-md-block d-none "> <span> Please Let us know little bit </span>  <span> about your self </span></p>
+                         
+                           <div  id="input-size" style="" >
+                            <div class="input-div mt-3">
+                                <label  class="text-xs fw-bold" >Name</label>
+                                <input  type="text" name="Cname" id="name" placeholder="Enter Your Name" class="form-control text-xs fw-bold form-control-lg "  required />
+                        </div>
+                        <div>
+                            <label  class="text-xs fw-bold mt-3" >email</label>
+                            <input  type="email" name="Cname" id="name" placeholder="Enter Your Email" class="form-control text-xs fw-bold form-control-lg" required require/>
+                        </div>
+                        <div>
+                            <label  class="text-xs fw-bold mt-3" >Password</label>
+                            <input  type="password" name="Cname" id="name" placeholder="Enter Your Password" class="form-control text-xs fw-bold form-control-lg" required require/>
+                        </div>
+                        <div>
+                            <label  class="text-xs fw-bold mt-3" >Conform Password</label>
+                            <input  type="password" name="Cname" id="name" placeholder="Enter Your conform password" class="form-control text-xs fw-bold form-control-lg" required require/>
+                        </div>
+                        
+                    </div>
+
+                    <div class="mobile-footer">
+
+                   
+                    <div class="buttons d-flex justify-content-between mt-5 align-items-center ">
+                        <p class="text-xs float-start d-md-none" >Alredy have an account</p>
+                       <p> <button class="btn fw-bold text-xs bg-blue text-white px-4" >Next</button></p>
+                    </div>
+                </div>
+                </div>
+
+
+                    <!-- <div class="second">
+                        <p class="fs-3  fw-bold text-blue d-flex flex-column lh-1 "> <span> Please Let us know little
+                                bit </span> <span>  about your Company</span></p>
+                        <div>
+                            <div class="d-flex gap-3">
+                                <div class="input-div mt-2 col-6 pe-3">
+                                    <label class="text-xs fw-bold">Company Name</label>
+                                    <input type="text" name="Cname" id="name" placeholder="Enter your Company Name"
+                                        class="form-control text-xs fw-bold form-control-lg " required />
+                                </div>
+                                <div class="input-div mt-2 col-6 pe-3">
+                                    <label class="text-xs fw-bold">Mobile</label>
+                                    <input type="text" name="Cname" id="name" placeholder="Enter your Mobile Number"
+                                        class="form-control text-xs fw-bold form-control-lg " required />
+                                </div>
+                            </div>
+
+                            <div class="mt-2">
+                                <label for="exampleFormControlTextarea1" class=" text-xs fw-bold">Company Address</label>
+                                <textarea class="form-control text-xs fw-bold" id="exampleFormControlTextarea1"
+                                    placeholder="Enter Your Company Address " rows="3"></textarea>
+                            </div>
+
+                            <div class="d-flex gap-3 mt-2">
+                                <div class="input-div  col-6 pe-3">
+                                    <label class="text-xs fw-bold">city</label>
+                                    <select class="form-select form-select-lg mb-3 text-xs fw-bold  "
+                                        aria-label=".form-select-lg example">
+                                        <option selected>select your city</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="input-div col-6 pe-3">
+                                    <label class="text-xs fw-bold">state</label>
+                                    <select class="form-select form-select-lg mb-3 text-xs fw-bold  "
+                                        aria-label=".form-select-lg example">
+                                        <option selected>select your state</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-div mt-2 col-6 pe-3">
+                                <label class="text-xs fw-bold">Pincode</label>
+                                <input type="text" name="Cname" id="name" placeholder="Enter Company pincode"
+                                    class="form-control text-xs fw-bold form-control-lg " required />
+                            </div>
+                        </div>
+
+                        <div class="buttons text-end mt-5 ">
+                        <button class="btn fw-bold text-xs bg-blue text-white px-4" >Next</button>
+                    </div>
+                    </div> -->
+
+
+
+                    <!-- <div class="third">
+                        <p class="fs-3  fw-bold text-blue d-flex flex-column lh-1 "> <span> Please Let us know little bit </span>  <span> about the contact person </span></p>
+                         
+                           <div    id="input-size" >
+                            <div class="input-div mt-3">
+                                <label  class="text-xs fw-bold" >Contact person name</label>
+                                <input  type="text" name="Cname" id="name" placeholder="Enter the Contact person name" class="form-control text-xs fw-bold form-control-lg "  required />
+                        </div>
+                        <div>
+                            <label  class="text-xs fw-bold mt-3" >Contact person Email</label>
+                            <input  type="email" name="Cname" id="name" placeholder="Enter Contact person Email" class="form-control text-xs fw-bold form-control-lg" required require/>
+                        </div>
+                        <div>
+                            <label  class="text-xs fw-bold mt-3" >Contact person Mobile number</label>
+                            <input  type="number" name="Cname" id="name" placeholder="Enter Contact person Mobile number" class="form-control text-xs fw-bold form-control-lg" required require/>
+                        </div>
+                       
+                        
+                    </div>
+                    <div class="buttons text-end mt-5 ">
+                        <button class="btn fw-bold text-xs bg-blue text-white px-4" >Next</button>
+                    </div>
+                </div> -->
+
+
+
+                <!-- <div class="fourth">
+                    <p class="fs-3  fw-bold text-blue d-flex flex-column lh-1 "> <span> Please Let us know little bit </span>  <span> about your bussiness insights </span></p>
+                       
+                    <div>
+
+                        <div class="input-div mt-2 ">
+                            <label class="text-xs fw-bold">Company Website URL</label>
+                            <input type="text" name="Cname" id="name" placeholder="URL"
+                                class="form-control text-xs fw-bold form-control-lg " required />
+                        </div>
+
+                        <div class="d-flex gap-3 mt-2">
+                            <div class="input-div  col-6 pe-3">
+                                <label class="text-xs fw-bold">Team size</label>
+                                <select class="form-select form-select-lg mb-3 text-xs fw-bold  "
+                                    aria-label=".form-select-lg example">
+                                    <option selected>select your company team size</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-div col-6 pe-3">
+                                <label class="text-xs fw-bold">Number of contact list</label>
+                                <input type="number" name="Cname" id="name" placeholder="Enter Number of contact list "
+                                class="form-control text-xs fw-bold form-control-lg " required />
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 mt-2 align-items-center">
+                            <div class="input-div  col-6 pe-3">
+                                <label class="text-xs fw-bold">Business' Category</label>
+                                <input type="text" name="Cname" id="name" placeholder="Enter your Business' Category"
+                                class="form-control text-xs fw-bold form-control-lg " required />
+                            </div>
+
+                            <div class=" input-text  ">
+                                <label id="name-label"  class="text-xs fw-bold" >Business Category</label>
+                                 <div class="d-flex align-items-center gap-2  ">
+                                <input type="radio" class="pt-1 specifyColor" id="specifyColor" 
+                                  name="radio1" value="GFG">
+                                  <label for="specifyColor"  class="text-xs fw-bold">OnLine</label>
+                                <input type="radio" id="specifyColor1"  class="ms-4 pt-1 specifyColor"
+                                  name="radio1" value="GFG">
+                                  <label for="specifyColor1"  class="text-xs fw-bold">OffLine</label>
+                              </div>
+                            </div>       
+                        </div>
+
+                    </div>
+
+                    <div class="buttons text-end mt-5 ">
+                        <button class="btn fw-bold text-xs bg-blue text-white px-4" >Submit</button>
+                    </div>
+                </div> -->
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="sing.js"></script>
+
+    </script>
+</body>
+
+</html>

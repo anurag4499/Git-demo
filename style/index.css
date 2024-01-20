@@ -1,6 +1,28 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: none;
+}
+.profile-match{
+    border: 3px solid rgb(198, 224, 249);
+    border-radius: 10rem;
+}
+
+.bg-xs-pink{
+    background-color: #fbe5ef;
+}
+
+.side-border{
+    border-top: 1.5px solid #B4B4B4;
+}
+.border-right{
+    border-right: 5px solid #B4B4B4;
+}
+
 .profile-img{
-     width: 10rem;
-     height: 10rem;
+     width: 12rem;
+     height: 14rem;
 
 }
 .img-side{
@@ -9,16 +31,72 @@
     top: 2rem;
     left: 2rem;
 }
+
+.right-side-img{
+    width: 5.5rem;
+    height: 6rem;
+   }
 .img-contact{
     width: 27.5rem;
     height: 5rem;
 }
+.contact-name{
+    left: 5rem;
+}
+
+.premium-fix{
+     top: 1.8rem;
+     left: 10rem;
+ }
+
+
+
+/* Change Img */
+.modal-content{
+    border-radius: 10px;
+   width: 37rem;
+  
+}
+
+ .carousel-item img {
+   width: 250px;
+   height: 300px !important
+ }
+
+ #myCarousel .carousel-indicators {
+   position: static;
+   margin-top: 0px
+ }
+
+ #myCarousel .carousel-indicators>li {
+   width: 100px
+ }
+
+ #myCarousel .carousel-indicators li img {
+   display: block;
+   opacity: 0.2
+ }
+
+ #myCarousel .carousel-indicators li.active img {
+   opacity: 1
+ }
+
+ #myCarousel .carousel-indicators li:hover img {
+   opacity: 0.4
+ }
+ /* Change Img */
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 1220px){
 
     .img-contact{
-        width: 22rem;
+        width: 20rem;
     }
 
 }
@@ -30,11 +108,6 @@
         height: 7rem;
    
    }
-   
-
-    .img-contact{
-        width: 17rem;
-    }
 
 }
 
@@ -42,30 +115,78 @@
 @media only screen and (max-width: 767px){
 
 
-    .img-side{
-        width: 4rem;
-        height: 4rem;
-        top: 2.7rem;
-        left: 2rem;
-    }
+    .profile-img{
+        width: 20rem;
+        height: 30rem;
+        /* box-shadow: 20px 20px 20px 20px black;
+   z-index: +2; */
+   }
+  
 
+
+    .border-right{
+        border-right: 0px solid #B4B4B4;
+    }
 	
    .right-side-img{
     width: 4.5rem;
     height: 5rem;
+   }
+   .match-img{
+     width: 3rem;
+     height: 3rem;  
    }
 
     .right-side{
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
     }
-    .img-contact{
-        width: 17rem;
+    .premium-fix{
+        top: 5rem;
+        left: 7rem;
     }
+    
+
+
+    /* Modal */
+
+    .modal-content{
+        border-radius: 7px;
+       width: 23rem;
+       /* height: 30rem; */
+       /* backdrop-filter: 7px; */
+      
+   }
+     
+
+   .carousel-item img {
+    width: 20rem;
+    height: 25rem !important
+  }
+
+
+  #myCarousel .carousel-indicators>li {
+    width: 32px
+  }
+    /* Modal */
+
+
+
 }
 
 @media only screen and (max-width: 480px){
-    .img-contact{
-        width: 12.5rem;
+    .premium-fix{
+        top: 5rem;
+        left: 1rem;
     }
+
+
+
+
+    
+
 }
+
+
+
+

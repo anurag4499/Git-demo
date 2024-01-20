@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Document </title>
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #eee
+    }
+    .mainimg{
+      height: 10rem;
+    }
+
+    .carousel-inner img {
+      width: 100%
+    }
+
+    .carousel-item img {
+      width: 280px;
+      height: 240px !important
+    }
+
+    #myCarousel .carousel-indicators {
+      position: static;
+      margin-top: 0px
+    }
+
+    #myCarousel .carousel-indicators>li {
+      width: 100px
+    }
+
+    #myCarousel .carousel-indicators li img {
+      display: block;
+      opacity: 0.5
+    }
+
+    #myCarousel .carousel-indicators li.active img {
+      opacity: 1
+    }
+
+    #myCarousel .carousel-indicators li:hover img {
+      opacity: 0.75
+    }
+  </style>
+</head>
+
+<body>
+  <div class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <!-- Launch demo modal -->
+    <img class="mainimg" src="/img/kajal.png" alt="">
+  </div>
+  <!-- <div class="container"> -->
+
+
+    <div class="modal fade mb-3 pb-3 " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+    <div class="text-center mb-5">
+      <!-- <div class=""> -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+          <div class="carousel-inner">
+            <div class="carousel-item active " > <img src="/img/anushka.png" id="#Idmainimg" class="rounded-5"> </div>
+            <!-- <div class="carousel-item  active  "> <img src="/img/kajal.png" class="rounded"> </div>
+            <div class="carousel-item"> <img src="/img/anushka.png" class="rounded"> </div> -->
+          </div>
+          <ol id="thumbs" class="carousel-indicators list-inline">
+            <li class="list-inline-item active"> <a  class="selected" data-slide-to="0"
+                data-target="#myCarousel"> <img src="/img/anushka.png"  class="img-fluid rounded"  onclick="changeimg('/img/anushka.png')" > </a>
+            </li>
+            <li class="list-inline-item handleclick"> <a id="carousel-selector-1"  data-slide-to="1" data-target="#myCarousel"   > <img
+                  src="/img/kajal.png" onclick="changeimg('/img/kajal.png')" class="img-fluid rounded"> </a> </li>
+            <li class="list-inline-item handleclick"> <a id="carousel-selector-1"  data-slide-to="1" data-target="#myCarousel" onclick="changeimg('/img/sweta.png')"> <img
+                  src="/img/sweta.png" class="img-fluid rounded"> </a> </li>
+            <li class="list-inline-item handleclick"> <a id="carousel-selector-2" data-slide-to="2" data-target="#myCarousel"  onclick="changeimg('/img/unsplash_H0PHCtE8uaQ.png')"> <img
+                  src="/img/unsplash_H0PHCtE8uaQ.png" class="img-fluid rounded"> </a> </li>
+          </ol>
+        </div>
+      <!-- </div> -->
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+  </div>
+</div>
+</div>
+</div>
+
+  <!-- </div> -->
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script>
+
+
+
+    function changeimg(filename){
+      let img=document.getElementById('#Idmainimg');
+      img.setAttribute("src",filename);
+       
+     $(document).on('click','ol li',function(){
+      $(this).addClass('active').siblings().removeClass('active')
+     })
+     }
+      
+  </script>
+
+
+</body>
+
+</html>

@@ -62,9 +62,11 @@ h1,h2,h3,h4,h5,h6,p,span{
 a{
     text-decoration: none;
 }
-.opacity{
-    background-color: #ffb5d9;
-    opacity: 0.1;
-    backdrop-filter: blur(95px);
-    box-shadow:  rgba(243, 126, 171, 0.35);
+.contblur{
+    /* background-color: #fce6f0; */
+    background-size: cover;
+    overflow: hidden;
+    filter: blur(8px);
+    /* filter: blur(3px); */
+    /* box-shadow:  rgba(243, 126, 171, 0.35); */
 }

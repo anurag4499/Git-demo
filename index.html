@@ -11,27 +11,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-        <!-- text -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Tammudu+2&family=Bree+Serif&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <!--  -->
-
-
-        <!-- -->
-
-       <!-- owl carousel css link -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  
-<!-- owl carousel theme.css link -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">  
-
-<!-- owl carousel js file -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-
-        <!--  -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      
+    <!-- text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Tammudu+2&family=Bree+Serif&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--  -->
 
 
     <link rel="stylesheet" href="./style/theme.css">
@@ -39,515 +29,553 @@
 </head>
 
 <body>
-    <div class="container-xl d-md-flex gap-xl-5 gap-lg-3 gap-1  mt-5  ">
+    <!-- <script src="/index.js"></script>     -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+      <div class="text-center mb-md-5">
+        <!-- <div class=""> -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+            <div class="carousel-inner">
+              <div class="carousel-item active   " > <img src="/img/unsplash_H0PHCtE8uaQ.png" id="#Idmainimg"  class="main-modal-img rounded-2" > </div>
+            </div>
+            <ol  class="carousel-indicators list-inline">
+              <li class=" active"> <a  id="carousel-selector-1" > <img
+                    src="/img/unsplash_H0PHCtE8uaQ.png"  class="img-fluid rounded"  onclick="changeimg('/img/unsplash_H0PHCtE8uaQ.png')" > </a> </li>
+              <li > <a id="carousel-selector-1" > <img
+                    src="/img/kajal.png" onclick="changeimg('/img/kajal.png')" class="img-fluid rounded"> </a> </li>
+              <li > <a id="carousel-selector-1"   onclick="changeimg('/img/sweta.png')"> <img
+                    src="/img/sweta.png" class="img-fluid rounded"> </a> </li>
+              <li > <a id="carousel-selector-1"   onclick="changeimg('/img/anushka.png')"> <img
+                    src="/img/anushka.png" class="img-fluid rounded"> </a> </li>
+              <li > <a id="carousel-selector-1"   onclick="changeimg('/img/tanu.png')"> <img
+                    src="/img/tanu.png" class="img-fluid rounded"> </a> </li>
+            </ol>
+          </div>
+        <!-- </div> -->
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+    </div>
+  </div>
+  </div>
+  </div>
+  
+    <!-- Change Img -->
+
+
+
+
+    <div class="  d-md-flex  gap-lg-2 px-lg-4  mt-4  ">
         <div class="col-md-8">
-                <div class="d-md-flex gap-3 border rounded ps-3 pt-2 pb-3 pe-md-5 ">
 
 
+            <!-- Mobile -->
+            <div class="border rounded d-md-none  ">
 
-                    <div class="col-md-3 d-flex flex-column justify-content-center align-items-center ">
-                        <div class=" profile-img ">
-                            <img class="img-cover rounded" src="./img/unsplash_H0PHCtE8uaQ.png" alt="">
-                        </div>
-                        <p class="text-black  ">1/4</p>
+                <!-- <div class="d-flex gap-3" > -->
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center px-4  ">
+                    <div class=" profile-img  "   data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+                        <img class="img-cover img-thumbnail rounded-4 " src="/img/unsplash_H0PHCtE8uaQ.png" alt=""   >
                     </div>
-                    <div class="col-md-7 ">
+                    <p class="text-black  ">1/4</p>
+                </div>
 
-                        <!-- <div class="d-flex gap-2 "> -->
+                <div class="p-2">
+                    <div>
+                        <p class="fs-1 fw-bold">Komal sharma <i class="bi fs-4 text-blue bi-patch-check-fill"></i> </p>
 
-                            <p class="fs-3 fw-bold" >Komal sharma <i class="bi fs-4 text-blue bi-patch-check-fill"></i> </p>
-                            
-                        <!-- </div> -->
                         <div class="d-flex gap-2 align-items-center ">
-                            <p class="text-xs"> ID : 56785545457 </p>
+                            <p class=""> ID : 56785545457 </p>
                             <i class="bi bi-clipboard "></i>
                         </div>
+                    </div>
 
-                        <div class="mt-2 text-xs pe-md-4">
-                            <p class=" text-black ">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptas nam
-                                necessitatibus doloribus fuga, accusamus officia debitis soluta dicta obcaecati
-                                praesentium mollitia, officiis est dignissimos quos, in architecto doloremque.
-                            </p>
 
-                        </div>
-
-                        <div class="d-flex gap-3 mt-4 ms-4  fs-5  ">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-3 mt-1   fs-5  ">
                             <i class=" text-pink fw-bold bi bi-heart"></i>
                             <i class=" text-pink bi bi-chat-left-dots-fill"></i>
                             <i class="text-pink bi bi-telephone-fill"></i>
                         </div>
-
-                    </div>
-
-                    <div class="col-md-2  d-flex flex-column  justify-content-end ">
-
-
-
-                        <div class="text-end" >
-                            <p class="text-black fw-bold ">Match Score</p>
-                            <h1 class="text-pink fs-1 fw-bold mb-3 ">85%</h1>
+                        <div>
                             <p> <i class=" fs-4 bi bi-person-fill-slash"></i></p>
                         </div>
-
-                        <!-- <div class=" mt-4 ms-5 text-end "> -->
-
-                           
-                        <!-- </div> -->
                     </div>
+
+                    <div class="mt-2  pe-md-4">
+                        <p class=" text-black ">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptas nam
+                            necessitatibus doloribus fuga, accusamus officia debitis soluta dicta obcaecati
+                            praesentium mollitia, officiis est dignissimos quos, in architecto doloremque.
+                        </p>
+
+                    </div>
+
+                    <div class="profile-match mt-2  p-1 px-2 d-flex justify-content-between align-items-center ">
+                        <div class=""> <img class="match-img  rounded-circle " src="./img/anushka.png" alt=""> </div>
+                        <div class="text-center">
+                            <p class=" fw-bold ">Match Score</p>
+                            <h1 class="text-pink fs-1 fw-bold  ">85%</h1>
+                        </div>
+                        <div class=""><img class="match-img rounded-circle" src="./img/kajal.png" alt=""></div>
+
+                    </div>
+
                 </div>
 
-
-
-            <div class="bg-light mt-4  rounded-3 px-md-4 " >
-                     <!-- <div class= "mx-3 " >  -->
-                        <span class="bg-pink  text-white p-1 px-2 rounded-bottom-2 fs-5 "> <i class="bi bi-person   "></i> Personal Detail</span>
-                
-                        <p class="fs-5 fw-semibold mt-3" >Full name : Komal Umesh Sharma</p>
- 
-                        <div class="row my-3" >
-                         
-                        <div class="col-6  d-flex gap-md-5 gap-2 border-right">  
-                         <div class="d-flex text-xs gap-2 text-black flex-column   " >
-                              <p> Date of Birth </p>
-                              <p> Age </p>
-                              <p> cast </p>
-                              <p> Marital status </p>
-                         </div>
-                         <div class="d-flex text-xs  flex-column gap-2  " >
-                              <p>: 26th June 1998 </p>
-                              <p>: 23 Years </p>
-                              <p>: Hindu </p>
-                              <p>: Unmarrid </p>
-                         </div>
-                        </div>
-
-                        <div class="col-6  d-flex gap-md-5 gap-2">  
-                         <div class="d-flex text-xs gap-2 text-black flex-column  ms-md-2 " >
-                              <p> Weight </p>
-                              <p> Height </p>
-                              <p> Mother Tongue </p>
-                              <p> Religion </p>
-                         </div>
-                         <div class="d-flex text-xs  flex-column gap-2  " >
-                              <p> : 55 Kg </p>
-                              <p> : 4'6 Ft </p>
-                              <p>: Hindi </p>
-                              <p>: Hindu </p>
-                         </div>
-                        </div>
-                    </div>
-                           <!-- <p class="text-xs text-black  ">date od birth   <span class="ps-5" >:23/3/1998</span> </p>
-                           <p class="text-xs text-black  ">date birth   <span class="ps-5" >:23/3/1998</span> </p>
-                           <p class="text-xs text-black  ">date od birth   <span class="ps-5" >:23/3/1998</span> </p>
-                           <p class="text-xs text-black  ">date od birth   <span class="ps-5" >:23/3/1998</span> </p> -->
-                           
-
-
-                           <div class="d-flex gap-2 align-items-center text-xs py-3 ps-3  ">
-                                 
-                            <p class="fs-6 " > Hobbies : </p>
-                                <p class="px-3 py-1 bg-white rounded-4 text-blue ">Music</p>
-                                <p class="px-3 py-1 bg-white rounded-4 text-blue ">Music</p>
-                                <p class="px-3 py-1 bg-white rounded-4 text-blue ">Music</p>
-
-                        <!-- </div> -->
-                    </div>
             </div>
 
 
-            <div class= "px-md-4 bg-light mt-4  rounded-3  pb-3 " > 
-                
-                <span class="bg-pink  text-white p-1 px-2  rounded-bottom-2 fs-5"> <i class="bi bi-person-lines-fill"></i> Contact Detail</span>
-                
-                <div class="d-flex  gap-4 pb-3" >
-                <div class="text-xs col-4 mt-2 ">
-                <p class="py-2" >Phone Number: <span class="text-black" >+913456765654</span> </p>
-                <p class="py-2" >Parent Number: <span class="text-black" >+913456765654</span> </p>
-                <p class="py-2" >Send Mail: <span class="text-black" >+913456765654</span> </p>
+            <!-- ########## -->
+
+
+            <div class="d-md-flex gap-3 border d-none d-md-block rounded ps-3 pt-2 pb-3 pe-md-5 ">
+
+
+
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center ">
+                    <!-- <div class=" profile-img ">
+                        <img class="img-cover rounded" src="./img/unsplash_H0PHCtE8uaQ.png" alt="">
+                    </div> -->
+                    <div class=" profile-img  "   data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+                        <img class="img-cover  rounded-4" src="/img/unsplash_H0PHCtE8uaQ.png" alt=""   >
+                    </div>
+                    <p class="text-black  ">1/4</p>
+                </div>
                     
-                <div class=" d-flex gap-2 " >
-                    <p  ><i class="bi bi-instagram bg-pink rounded px-1 fs-6 text-white "></i></p>
-                   <p> <i class="bi bi-whatsapp bg-pink rounded px-1 fs-6 text-white"></i> </p>
-                    <p><i class="bi bi-twitter bg-pink rounded px-1 fs-6 text-white"></i></p>
-                   <p> <i class="bi bi-facebook bg-pink rounded px-1 fs-6 text-white"></i></p>
-                </div>
-           
-                
-            </div>
+                <div class="col-md-7 border-right">
 
+                    <!-- <div class="d-flex gap-2 "> -->
 
-            <!-- <div class="position-relative   "  > -->
-              
-                
-               
+                    <p class="fs-3 fw-bold">Komal sharma <i class="bi fs-4 text-blue bi-patch-check-fill"></i> </p>
 
-                <div class="position-relative mt-sm-1 mt-2 " >
-                <div class="img-contact" >
-                    <img class="img-cover rounded-top-3 " src="./img/contactimg.png" alt="">
-                </div>
-                <div class="img-contact position-relative bg-white rounded-bottom-3" >
-                    <div class="position-absolute  ps-5 " >
-                    <p class="fw-semibold" >Komal Sharma </p>
-                    <p class="text-xs text-black" >SQA whizzactsolution's</p>
+                    <!-- </div> -->
+                    <div class="d-flex gap-2 align-items-center ">
+                        <p class=""> ID : 56785545457 </p>
+                        <i class="bi bi-clipboard "></i>
                     </div>
-                <div class="position-absolute bottom-0 end-0 m-2" >
-                    <p class="text-xs text-blue" >connection 500+</p>
+
+                    <div class="mt-2  pe-md-4">
+                        <p class=" text-black ">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptas nam
+                            necessitatibus doloribus fuga, accusamus officia debitis soluta dicta obcaecati
+                            praesentium mollitia, officiis est dignissimos quos, in architecto doloremque.
+                        </p>
+
+                    </div>
+
+                    <div class="d-flex gap-3 mt-4 ms-4  fs-5  ">
+                        <i class=" text-pink fw-bold bi bi-heart"></i>
+                        <i class=" text-pink bi bi-chat-left-dots-fill"></i>
+                        <i class="text-pink bi bi-telephone-fill"></i>
+                    </div>
+
+                </div>
+
+                <div class="col-md-2  d-flex flex-column  justify-content-end ">
+
+                    <div class="text-end">
+                        <p class="text-black fw-bold ">Match Score</p>
+                        <h1 class="text-pink fs-1 fw-bold mb-3 ">85%</h1>
+                        <p> <i class=" fs-4 bi bi-person-fill-slash"></i></p>
+                    </div>
+
+                  
                 </div>
             </div>
 
-                <div class="position-absolute float-right top-0 end-0 me-2  " style="z-index: 2;" >
-                    <i class="bi text-blue bi-linkedin"></i>
-                </div>
 
-                <div class="position-absolute img-side " style="z-index: 3;" >
-                   
-                    <img class="img-cover   rounded-circle" src="./img/unsplash_H0PHCtE8uaQ.png" alt="">
-                </div>
 
-            </div>
-            <!-- </div> -->
-        </div>
-         </div>
-
-
-
-
-
-         <!-- Contact Premium -->
-             
-       <div  class="px-md-4 bg-light-pink mt-4  position-relative  rounded-3 pb-3  " >
-
-        <span class="bg-pink  text-white p-1 px-2 rounded-bottom-2 fs-5"> <i class="bi bi-person-lines-fill"></i> Contact Detail</span>
-
-  <div  class="d-flex justify-content-center pt-4  ">
-        <div style="z-index: 5; " class=" position-absolute bg-white rounded p-4  mx-auto    d-flex flex-column justify-content-center align-items-center " >
-            <p><img src="./img/Group 111.png" alt=""></p>
-            <p class="text-pink" >Upgrade membership to accsess contact</p>
-        </div>
-    </div>
-
-    <div class=" opacity d-flex  gap-4 pb-3" >
-        <div class="text-xs col-4 mt-2 ">
-        <p class="py-2" >Phone Number: <span class="text-black" >+913456765654</span> </p>
-        <p class="py-2" >Parent Number: <span class="text-black" >+913456765654</span> </p>
-        <p class="py-2" >Send Mail: <span class="text-black" >+913456765654</span> </p>
-            
-        <div class=" d-flex gap-2 " >
-            <p  ><i class="bi bi-instagram bg-pink rounded px-1 fs-6 text-white "></i></p>
-           <p> <i class="bi bi-whatsapp bg-pink rounded px-1 fs-6 text-white"></i> </p>
-            <p><i class="bi bi-twitter bg-pink rounded px-1 fs-6 text-white"></i></p>
-           <p> <i class="bi bi-facebook bg-pink rounded px-1 fs-6 text-white"></i></p>
-        </div>
-   
-        
-    </div>
-
-
-    <!-- <div class="position-relative   "  > -->
-      
-        
-       
-
-        <div class="position-relative  " >
-        <div class="img-contact" >
-            <img class="img-cover rounded-top-3 " src="./img/contactimg.png" alt="">
-        </div>
-        <div class="img-contact position-relative bg-white rounded-bottom-3" >
-            <div class="position-absolute  ps-5 " >
-            <p class="fw-semibold" >Komal Sharma </p>
-            <p class="text-xs text-black" >SQA whizzactsolution's</p>
-            </div>
-        <div class="position-absolute bottom-0 end-0 m-2" >
-            <p class="text-xs text-blue" >connection 500+</p>
-        </div>
-    </div>
-
-        <div class="position-absolute float-right top-0 end-0 me-2  " style="z-index: 2;" >
-            <i class="bi text-blue bi-linkedin"></i>
-        </div>
-
-        <div class="position-absolute img-side " style="z-index: 3;" >
-           
-            <img class="img-cover   rounded-circle" src="./img/unsplash_H0PHCtE8uaQ.png" alt="">
-        </div>
-
-    </div>
-    <!-- </div> -->
-</div>
-</div>
-
-
-
-
-<!--  -->
-
-<!-- Profssion Detail -->
-
-<div class="bg-light mt-4  rounded-3 px-md-4 pb-3 " >
-    <!-- <div class= "mx-3 " >  -->
-       <span class="bg-pink  text-white p-1 px-2 rounded-bottom-2 fs-5 "> <i class="bi bi-bag"></i> Profession Detail</span>
-
-       <!-- <p>Full name:Komal Sharma</p> -->
-
-       <div class="row my-3" >
-        
-       <div class="col-6  d-flex gap-4 border-right">  
-        <div class="d-flex text-xs gap-2 text-black flex-column   " >
-             <p> Education </p>
-             <p> Occupation Details </p>
-             <p> Annual Income</p>
-             
-        </div>
-        <div class="d-flex text-xs  flex-column gap-2  " >
-             <p>: Bsc It</p>
-             <p>: Software Domain </p>
-             <p>: 3.5 Lakh </p>
-            
-        </div>
-       </div>
-
-       <div class="col-6  d-flex gap-md-5 gap-2 ">  
-        <div class="d-flex text-xs gap-2 text-black flex-column  ms-md-2 " >
-             <p>Designation</p>
-             <p> Employee in </p>
-            
-        </div>
-        <div class="d-flex text-xs  flex-column gap-2  " >
-             <p> : Software Tester</p>
-             <p> : WhizzAct</p>
-        </div>
-       </div>
-   </div>
- 
-   <!-- </div> -->
-</div>
-
-
-<!--  -->
-
-
-
-<!-- Profession Detail-2 -->
-<div class="bg-light mt-4  px-md-4 rounded-3 pb-3" >
-    <!-- <div class= "mx-3 " >  -->
-       <span class="bg-pink   text-white p-1 px-2 rounded-bottom-2 fs-5 "> <img src="./img/cycle.png" alt=""> Profession Detail</span>
-
-       <!-- <p>Full name:Komal Sharma</p> -->
-
-       <div class="row  my-3 " >
-        
-       <div class="col-6  d-flex gap-4 border-right">
-
-        <div class="bg-white d-none d-md-block  p-1 rounded" >
-            <img src="./img/Group 114.png" alt="">
-        </div>
-
-        <div class="d-flex text-xs gap-2 text-black flex-column   " >
-             <p> SubCast </p>
-             <p> Raasi </p>
-             <p> Manglik</p>
-             
-        </div>
-        <div class="d-flex text-xs  flex-column gap-2  " >
-             <p>: Sharma</p>
-             <p>: Capricon</p>
-             <p>: .... </p>
-            
-        </div>
-       </div>
-
-       <div class="col-6  d-flex gap-md-5 gap-2 ">  
-        <div class="d-flex text-xs gap-2 text-black flex-column  ms-md-2 " >
-             <p>Start</p>
-             <p> Gothram </p>
-            
-        </div>
-        <div class="d-flex text-xs  flex-column gap-2 " >
-             <p> : Sharma</p>
-             <p> : Caprican</p>
-        </div>
-       </div>
-   </div>
- 
-   <!-- </div> -->
-</div>
-
-
-<!--  -->
-
-
-
-<!-- Family Detail -->
-
-<div class="bg-light mt-4 px-md-4 rounded-3 pb-3 " >
-    <!-- <div class= "mx-3 " >  -->
-       <span class="bg-pink  text-white p-1 px-2 rounded-bottom-2 fs-5 "> <img  class="" src="./img/family.png" alt=""> Profession Detail</span>
-
-       <!-- <p>Full name:Komal Sharma</p> -->
-
-       <div class="row my-3" >
-        
-       <div class="col-6  d-flex gap-md-5 gap-2 border-right">  
-        <div class="d-flex text-xs gap-2 text-black flex-column   " >
-             <p> Family Type </p>
-             <p> FatherName </p>
-             <p> Father Occupation</p>
-             <p>MotherName</p>
-             <p>Mother Occupation</p>
-             
-        </div>
-        <div class="d-flex text-xs  flex-column gap-2  " >
-             <p>: Nuclear</p>
-             <p>: Umesh </p>
-             <p>: Service (Private) </p>
-             <p>: Reena</p>
-             <p>: HouseWife</p>
-            
-        </div>
-       </div>
-
-       <div class="col-6  d-flex gap-md-5 gap-2  ">  
-        <div class="d-flex text-xs gap-2 text-black flex-column ms-md-2 " >
-             <p>Brothers</p>
-             <p>Married Brothers </p>
-             <p>Sisters</p>
-            <p>Married Sisters</p>
-            <p>Family Living in</p>
-            <p>Native City</p>
-        </div>
-        <div class="d-flex text-xs  flex-column gap-2 " >
-             <p> : 1</p>
-             <p> : Not Married</p>
-             <p> : None</p>
-             <p> : None</p>
-             <p> : Together</p>
-             <p> : Mumbai</p>
-        </div>
-       </div>
-   </div>
- 
-
-
-   <div class="bg-white rounded-3 mt-3 p-2 ">
-    <p class="fs-5 fw-bold">About Family</p>
-    <p class="text-black text-xs" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, totam. Vel itaque laboriosam sequi dolorum quisquam delectus, error, perferendis ad voluptatem quaerat repellat veniam nesciunt aliquam! Minus omnis aspernatur quaerat officia cupiditate fugiat nesciunt, minima cum quia nobis eveniet vitae. </p>
-   </div>
-
-   <!-- </div> -->
-</div>
-
-
-
-
-<!--  -->
-
-<div class="d-md-flex justify-content-between  gap-1 mt-4" >
-
-
-
-    
-
-<!-- Location -->
-<div class="bg-light col-md-6  rounded-3 px-md-4 pb-3" >
-    <!-- <div class= "mx-3 " >  -->
-       <span class="bg-pink  text-white p-1 px-2 rounded-bottom-2 fs-6 "> <img  class="" src="./img/family.png" alt=""> Profession Detail</span>
-
-       <!-- <p>Full name:Komal Sharma</p> -->
-
-       <div class="row my-3" >
-        
-       <div class=" d-flex gap-5 ">  
-        <div class="d-flex text-xs gap-2 text-black flex-column " >
-             <p> Country </p>
-             <p> State </p>
-             <p> City</p>
-             <p>Pincode</p>
-             <p>Address</p>
-             
-        </div>
-        <div class="d-flex text-xs  flex-column gap-2 " >
-             <p>: India</p>
-             <p>: Maharastra </p>
-             <p>: Mumbai</p>
-             <p>: 400087</p>
-             <p>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, illum.  </p>
-            
-        </div>
-       </div>
-
-      
-   </div>
- 
-   <!-- </div> -->
-</div>
-
-
-
-<!--  -->
-
-
-
-<!-- Life Style -->
-<!-- <div class="col-5" > -->
-
-
-    <div class=" right-side bg-light col-md-6  rounded-3 px-md-4   "  >
-        <!-- <div class= "mx-3 " >  -->
-           <span class="bg-pink  text-white p-1 px-2 rounded-bottom-2 fs-6 "> <img  class="" src="./img/family.png" alt=""> Profession Detail</span>
-    
-           <!-- <p>Full name:Komal Sharma</p> -->
-    
-           <div class="row my-3" >
-            
-           <div class=" d-flex gap-5">  
-            <div class="d-flex text-xs gap-2 text-black flex-column  " >
-                 <p> Eating Habit </p>
-                 <p> Smoke Habit </p>
-                 <p> Drinking Habit</p>
-                 
-            </div>
-            <div class="d-flex text-xs  flex-column gap-2 " >
-                 <p>: Non-Vegetarien</p>
-                 <p>: No </p>
-                 <p>: Occationaly </p>
+            <div class="bg-light mt-4  rounded-3 px-4 ">
                 
+                <span class="bg-pink  text-white px-1 px-2 rounded-bottom-2 fs-5 "> <i class="bi bi-person   "></i>
+                    Personal Detail</span>
+
+                <p class="fs-5 fw-semibold mt-3">Full name : Komal Umesh Sharma</p>
+
+                <div class="row-md row my-3">
+
+                    <div class="col-md-6  d-flex gap-md-3  border-right">
+                        <div class="d-flex  gap-2 text-black  flex-column  col-md-0 col-6  ">
+                            <p> Date of Birth </p>
+                            <p> Age </p>
+                            <p> cast </p>
+                            <p> Marital status </p>
+                        </div>
+                        <div class="d-flex   flex-column gap-2  ">
+                            <p>: 26th June 1998 </p>
+                            <p>: 23 Years </p>
+                            <p>: Hindu </p>
+                            <p>: Unmarrid </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6  d-flex gap-md-3  mt-md-0 mt-2 ">
+                        <div class="d-flex  gap-2 text-black flex-column col-md-0 col-6  ms-md-2 ">
+                            <p> Weight </p>
+                            <p> Height </p>
+                            <p> Mother Tongue </p>
+                            <p> Religion </p>
+                        </div>
+                        <div class="d-flex   flex-column gap-2  ">
+                            <p> : 55 Kg </p>
+                            <p> : 4'6 Ft </p>
+                            <p>: Hindi </p>
+                            <p>: Hindu </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2 align-items-center  py-3 ps-md-3  ">
+
+                    <p class="fs-6 "> Hobbies : </p>
+                    <p class="px-3 py-1 bg-white rounded-4 text-blue ">Music</p>
+                    <p class="px-3 py-1 bg-white rounded-4 text-blue ">Music</p>
+                    <p class="px-3 py-1 bg-white rounded-4 text-blue ">Music</p>
+
+                </div>
             </div>
-           </div>
-    
-          
-       </div>
-     
-       <!-- </div> -->
-    </div>
+
+<!--Contact Detail  -->
+
+            <div class="px-4 bg-light mt-4  rounded-3 pb-3 ">
+
+                <span class="bg-pink  text-white px-1 px-2  rounded-bottom-2 fs-5"> <i
+                        class="bi bi-person-lines-fill"></i> Contact Detail</span>
+
+                <div class="d-md-flex  gap-4 pb-3">
+                    <div class="text-xs col-md-4 mt-2 ">
+                        <p class="py-2">Phone Number: <span class="text-black">+913456765654</span> </p>
+                        <p class="py-2">Parent Number: <span class="text-black">+913456765654</span> </p>
+                        <p class="py-2">Send Mail: <span class="text-black">+913456765654</span> </p>
+
+                        <div class=" d-flex gap-2 ">
+                            <p><i class="bi bi-instagram bg-pink rounded px-1 fs-6 text-white "></i></p>
+                            <p> <i class="bi bi-whatsapp bg-pink rounded px-1 fs-6 text-white"></i> </p>
+                            <p><i class="bi bi-twitter bg-pink rounded px-1 fs-6 text-white"></i></p>
+                            <p> <i class="bi bi-facebook bg-pink rounded px-1 fs-6 text-white"></i></p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="position-relative mt-sm-1 mt-2 ">
+                        <div class="img-contact position-relative ">
+                            <img class="img-cover rounded-top-3 " src="./img/contactimg.png" alt="">
+                            <div class="position-absolute  end-0 top-0 me-2" style="z-index: 3;">
+                                <i class="bi text-blue bi-linkedin"></i>
+                            </div>
+                        </div>
+                        <div class="img-contact position-relative bg-white rounded-bottom-3">
+                            <div class="position-absolute  ps-5 contact-name">
+
+                                <p class="fw-semibold fs-6 ">Komal Sharma </p>
+                                <p class="text-xs text-black fs-6">SQA whizzactsolution's</p>
+
+                            </div>
+                            <div class="position-absolute bottom-0 end-0 m-2">
+                                <p class=" text-blue">connection 500+</p>
+                            </div>
+                        </div>
+
+                        <div class="position-absolute img-side " style="z-index: 3;">
+
+                            <img class="img-cover   rounded-circle" src="./img/unsplash_H0PHCtE8uaQ.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
 
 
-</div>
+
+
+            <!-- Contact Premium -->
+
+            <div class="px-4   mt-4 bg-xs-pink position-relative  rounded-3 pb-3  ">
+
+                <span class="bg-pink  text-white px-1 px-2 rounded-bottom-2 fs-5" style="z-index: 5;"> <i
+                        class="bi bi-person-lines-fill"></i> Contact Detail</span>
+
+                <div  class=" d-flex position-relative   ">
+                <div style="z-index: 5;"
+                    class="  bg-white rounded-4 p-4  premium-fix  position-absolute  text-center ">
+                    <p><img src="./img/Group 111.png" alt=""></p>
+                    <p class="text-pink">Upgrade membership to accsess contact</p>
+                </div>
+                </div>
+
+                <div class=" d-md-flex  gap-4 pb-3">
+
+                    <div class="text-xs contblur col-md-4 mt-md-2 ">
+                        <p class="py-2">Phone Number: <span class="text-black">+913456765654</span> </p>
+                        <p class="py-2">Parent Number: <span class="text-black">+913456765654</span> </p>
+                        <p class="py-2">Send Mail: <span class="text-black">+913456765654</span> </p>
+
+                        <div class=" d-flex contblur gap-2 ">
+                            <p><i class="bi bi-instagram bg-pink rounded px-1 fs-6 text-white "></i></p>
+                            <p> <i class="bi bi-whatsapp bg-pink rounded px-1 fs-6 text-white"></i> </p>
+                            <p><i class="bi bi-twitter bg-pink rounded px-1 fs-6 text-white"></i></p>
+                            <p> <i class="bi bi-facebook bg-pink rounded px-1 fs-6 text-white"></i></p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="contblur ">
+                        <div class="img-contact position-relative">
+                            <img class="img-cover rounded-top-3 " src="./img/contactimg.png" alt="">
+                            <div class="position-absolute  end-0 top-0 me-2" style="z-index: 3;">
+                                <i class="bi text-blue bi-linkedin"></i>
+                            </div>
+                        </div>
+                        <div class="img-contact position-relative  rounded-bottom-3">
+                            <div class="position-absolute  ps-5 ">
+                                <p class="fw-semibold">Komal Sharma </p>
+                                <p class="text-xs text-black">SQA whizzactsolution's</p>
+                            </div>
+                            <div class=" contblur position-absolute bottom-0 end-0 m-2">
+                                <p class=" text-blue">connection 500+</p>
+                            </div>
+                        </div>
 
 
 
-<!-- </div>  -->
-<!--  -->
+                        <div class="position-absolute img-side " style="z-index: 3;">
+
+                            <img class="img-cover   rounded-circle" src="./img/unsplash_H0PHCtE8uaQ.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
 
 
 
 
+            <!--  -->
+
+            <!-- Profssion Detail -->
+
+            <div class="bg-light mt-4  rounded-3 px-4 pb-3 ">
+                <!-- <div class= "mx-3 " >  -->
+                <span class="bg-pink  text-white px-1 px-2 rounded-bottom-2 fs-5 "> <i class="bi bi-bag"></i> Profession
+                    Detail</span>
+
+                <div class="row-md row my-3">
+
+                    <div class="col-md-6  d-flex gap-md-3  border-right-md border-right">
+                        <div class="d-flex  gap-2 text-black  flex-column  col-md-0 col-6  ">
+                            <p> Education </p>
+                            <p> Occupation Details </p>
+                            <p> Annual Income</p>
+                        </div>
+                        <div class="d-flex   flex-column gap-2  ">
+                            <p>: Bsc It</p>
+                            <p>: Software Domain </p>
+                            <p>: 3.5 Lakh </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6  d-flex gap-md-3  mt-md-0 mt-2 ">
+                        <div class="d-flex  gap-2 text-black flex-column col-md-0 col-6  ms-md-2 ">
+                            <p>Designation</p>
+                            <p> Employee in </p>
+                        </div>
+                        <div class="d-flex   flex-column gap-2  ">
+                            <p> : Software Tester</p>
+                            <p> : WhizzAct</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <!--  -->
+
+
+
+            <!-- Profession Detail-2 -->
+            <div class="bg-light mt-4  px-4 rounded-3 pb-3">
+                <!-- <div class= "mx-3 " >  -->
+                <span class="bg-pink   text-white pb-1 px-2 rounded-bottom-2 fs-5 "> <img src="./img/Group 102.svg"
+                        alt=""> Profession Detail</span>
+
+
+                <div class="row-md row my-3">
+
+
+
+                    <div class="col-md-6   d-flex  gap-md-3   border-right">
+
+                        <div class="bg-white d-none d-md-block  p-1 rounded">
+                            <img src="./img/Group 114.png" alt="">
+                        </div>
+                        <div class="d-flex  gap-2 text-black  col-md-3 col-6  flex-column   ">
+                            <p> SubCast </p>
+                            <p> Raasi </p>
+                            <p> Manglik</p>
+
+                        </div>
+                        <div class="d-flex   flex-column gap-2  ">
+                            <p>: Sharma</p>
+                            <p>: Capricon</p>
+                            <p>: .... </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6  d-flex gap-md-3  mt-md-0 mt-2 ">
+                        <div class="d-flex  gap-2 text-black flex-column col-md-0 col-6  ms-md-2 ">
+                            <p>Start</p>
+                            <p> Gothram </p>
+                        </div>
+                        <div class="d-flex   flex-column gap-2  ">
+                            <p> : Sharma</p>
+                            <p> : Caprican</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--  -->
+
+
+
+            <!-- Family Detail -->
+
+            <div class="bg-light mt-4 px-4 rounded-3 pb-3 ">
+                <!-- <div class= "mx-3 " >  -->
+                <span class="bg-pink  text-white px-1 px-2 rounded-bottom-2 fs-5 "> <img class="" src="./img/family.png"
+                        alt=""> Family Detail</span>
+
+                <div class="row-md row my-3">
+
+                    <div class="col-md-6  d-flex gap-md-3  border-right-md border-right">
+                        <div class="d-flex  gap-2 text-black  flex-column  col-md-0 col-6  ">
+                            <p> Family Type </p>
+                            <p> FatherName </p>
+                            <p> Father Occupation</p>
+                            <p>MotherName</p>
+                            <p>Mother Occupation</p>
+                        </div>
+                        <div class="d-flex   flex-column gap-2  ">
+                            <p>: Nuclear</p>
+                            <p>: Umesh </p>
+                            <p>: Service (Private) </p>
+                            <p>: Reena</p>
+                            <p>: HouseWife</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6  d-flex gap-md-3  mt-md-0 mt-2 ">
+                        <div class="d-flex  gap-2 text-black flex-column col-md-0 col-6  ms-md-2 ">
+                            <p>Brothers</p>
+                            <p>Married Brothers </p>
+                            <p>Sisters</p>
+                            <p>Married Sisters</p>
+                            <p>Family Living in</p>
+                            <p>Native City</p>
+                        </div>
+                        <div class="d-flex   flex-column gap-2  ">
+                            <p> : 1</p>
+                            <p> : Not Married</p>
+                            <p> : None</p>
+                            <p> : None</p>
+                            <p> : Together</p>
+                            <p> : Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+
+     <div class="bg-white rounded-3 mt-3 p-2 ">
+                    <p class="fs-5 fw-bold">About Family</p>
+                    <p class="text-black ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, totam. Vel
+                        itaque laboriosam sequi dolorum quisquam delectus, error, perferendis ad voluptatem quaerat
+                        repellat veniam nesciunt aliquam! Minus omnis aspernatur quaerat officia cupiditate fugiat
+                        nesciunt, minima cum quia nobis eveniet vitae. </p>
+                </div>
+
+                <!-- </div> -->
+            </div>
+
+
+            <div class="d-md-flex justify-content-between  gap-1 mt-4">
+                <!-- Location -->
+                <div class="bg-light col-md-6  rounded-3 px-4 pb-3">
+                    <!-- <div class= "mx-3 " >  -->
+                    <span class="bg-pink  text-white  px-2 pb-1 rounded-bottom-2 fs-6 "> <img class=""
+                            src="./img/family.png" alt=""> Profession Detail</span>
+
+                    <div class="row my-3">
+
+                        <div class=" d-flex gap-3 ">
+                            <div class="d-flex  gap-2 text-black flex-column col-md-0 col-6 ">
+                                <p> Country </p>
+                                <p> State </p>
+                                <p> City</p>
+                                <p>Pincode</p>
+                                <p>Address</p>
+
+                            </div>
+                            <div class="d-flex   flex-column gap-2 col-md-0 col-6  ">
+                                <p>: India</p>
+                                <p>: Maharastra </p>
+                                <p>: Mumbai</p>
+                                <p>: 400087</p>
+                                <p class="me-3"> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+                                    illum. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Life Style -->
+
+
+                <div class=" right-side bg-light col-md-6  rounded-3 px-4   ">
+                    <!-- <div class= "mx-3 " >  -->
+                    <span class="bg-pink  text-white pb-1 px-2 rounded-bottom-2 fs-6 "> <img class=""
+                            src="./img/family.png" alt=""> Profession Detail</span>
+                    <div class="row my-3">
+                        <div class=" d-flex gap-3">
+                            <div class="d-flex  gap-2 text-black flex-column  col-md-0 col-6  ">
+                                <p> Eating Habit </p>
+                                <p> Smoke Habit </p>
+                                <p> Drinking Habit</p>
+
+                            </div>
+                            <div class="d-flex   flex-column gap-2  col-md-0 col-6 ">
+                                <p>: Non-Vegetarien</p>
+                                <p>: No </p>
+                                <p>: Occationaly </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
 
         <div class="col-md-4 right-side  ">
 
-            <div class="bg-light border rounded p-2   sticky-md-top">
-                <p class="fs-5 p-1 pb-2 fw-semibold " >Similar Profile</p>
+            <div class="bg-light border rounded p-2   sticky-md-top ">
+                <p class="fs-5 p-1 pb-2 fw-semibold ">Similar Profile</p>
+               
 
-
-      
-                
-      <!-- side view -->
-                <div class=" side-border py-3 mx-md-2 ">
-                    <div class="d-flex gap-md-2 gap-1  ">
+                <div class=" side-border py-3  ">
+                    <div class="d-flex gap-md-1 gap-1  ">
                         <div class="col-3 ">
                             <div class="right-side-img pt-2">
                                 <img class="img-cover rounded" src="./img/kajal.png" alt="">
@@ -561,7 +589,7 @@
                             <div class="">
                                 <p class="text-xs"> ID : 56785545457 </p>
                             </div>
-                            <div class="d-flex gap-md-3 gap-1  text-xs  ">
+                            <div class="d-flex gap-md-1 gap-1  text-xs  ">
                                 <div class="bg-white rounded-4 ">
                                     <p class="p-1 ">24yrs</p>
                                 </div>
@@ -579,8 +607,45 @@
                             </div>
                     </div>
                 </div>
+
+
+
+                <!-- side view -->
+                <div class=" side-border py-3 mx-md-2 ">
+                    <div class="d-flex gap-md-2 gap-1  ">
+                        <div class="col-2 ">
+                            <div class="right-side-img pt-2">
+                                <img class="img-cover rounded" src="./img/kajal.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-9 ">
+                            <div class="d-flex align-items-center gap-1 ">
+                                <p class="fs-5 fw-bolder">Komal Sharma</p>
+                                <i class="bi fs-6 text-blue text-primary bi-patch-check-fill"></i>
+                            </div>
+                            <div class="">
+                                <p class="text-xs"> ID : 56785545457 </p>
+                            </div>
+                            <div class="d-flex text-xs gap-md-3 gap-1    ">
+                                <div class="bg-white rounded-4 ">
+                                    <p class="p-1 ">24yrs</p>
+                                </div>
+                                <div class="bg-white rounded-4">
+                                    <p class="p-1"> <i class="bi text-blue bi-geo-alt-fill"></i> Maharastra</p>
+                                </div>
+                                <div class="bg-white rounded-5">
+                                    <p class="p-1 px-3">...</p>
+                                </div>
+                            </div>
+                            <p> <a href="" class="text-xs text-blue"> view profile </a></p>
+                        </div>
+                        <div class="  me-2 ">
+                            <i class="bg-white text-pink fw-bold bi bi-heart rounded-2  p-1"></i>
+                        </div>
+                    </div>
+                </div>
                 <!-- -------- -->
-      <!-- side view -->
+                <!-- side view -->
                 <div class=" side-border py-3 mx-md-2 ">
                     <div class="d-flex gap-md-2 gap-1   ">
                         <div class="col-3 ">
@@ -590,11 +655,11 @@
                         </div>
                         <div class="col-8 ">
                             <div class="d-flex align-items-center gap-1 ">
-                                <p class="fs-5 fw-bolder" >Komal Sharma</p>
+                                <p class="fs-5 fw-bolder">Komal Sharma</p>
                                 <i class="bi fs-6 text-blue text-primary bi-patch-check-fill"></i>
                             </div>
                             <div class="">
-                                <p class="text-xs"> ID : 56785545457 </p>
+                                <p class=""> ID : 56785545457 </p>
                             </div>
                             <div class="d-flex gap-md-3 gap-1  text-xs  ">
                                 <div class="bg-white rounded-4 ">
@@ -607,15 +672,15 @@
                                     <p class="p-1 px-3">...</p>
                                 </div>
                             </div>
-                           <p> <a href="" class="text-xs text-blue"> view profile </a></p>
+                            <p> <a href="" class="text-xs text-blue"> view profile </a></p>
                         </div>
-                            <div class="  me-2 ">
-                                <i class="bg-white text-pink fw-bold bi bi-heart rounded-2  p-1"></i>
-                            </div>
+                        <div class="  me-2 ">
+                            <i class="bg-white text-pink fw-bold bi bi-heart rounded-2  p-1"></i>
+                        </div>
                     </div>
                 </div>
                 <!-- -------- -->
-      <!-- side view -->
+                <!-- side view -->
                 <div class=" side-border py-3 mx-md-2 ">
                     <div class="d-flex gap-md-2 gap-1   ">
                         <div class="col-3 ">
@@ -625,13 +690,13 @@
                         </div>
                         <div class="col-8 ">
                             <div class="d-flex align-items-center gap-1 ">
-                                <p class="fs-5 fw-bolder" >Komal Sharma</p>
+                                <p class="fs-5 fw-bolder">Komal Sharma</p>
                                 <i class="bi fs-6 text-blue text-primary bi-patch-check-fill"></i>
                             </div>
                             <div class="">
-                                <p class="text-xs"> ID : 56785545457 </p>
+                                <p class=""> ID : 56785545457 </p>
                             </div>
-                            <div class="d-flex gap-md-3 gap-1  text-xs  ">
+                            <div class="d-flex gap-md-3 gap-1   text-xs ">
                                 <div class="bg-white rounded-4 ">
                                     <p class="p-1 ">24yrs</p>
                                 </div>
@@ -642,23 +707,23 @@
                                     <p class="p-1 px-3">...</p>
                                 </div>
                             </div>
-                           <p> <a href="" class="text-xs text-blue"> view profile </a></p>
+                            <p> <a href="" class="text-xs text-blue"> view profile </a></p>
                         </div>
-                            <div class="  me-2 ">
-                                <i class="bg-white text-pink fw-bold bi bi-heart rounded-2  p-1"></i>
-                            </div>
+                        <div class="  me-2 ">
+                            <i class="bg-white text-pink fw-bold bi bi-heart rounded-2  p-1"></i>
+                        </div>
                     </div>
                 </div>
                 <!-- -------- -->
-      
-               
 
 
-            <div class="side-border py-3"> 
-           
-                <p class="text-xs d-flex justify-content-center" >veiw more</p>
 
-            </div>
+
+                <div class="side-border py-3">
+
+                    <p class=" d-flex justify-content-center">veiw more</p>
+
+                </div>
 
             </div>
 
@@ -667,15 +732,27 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+        <script>
+            function changeimg(filename){
+              let img=document.getElementById('#Idmainimg');
+              img.setAttribute("src",filename);
+               
+             $(document).on('click','ol li',function(){
+              $(this).addClass('active').siblings().removeClass('active')
+             })
+             }
+              
+          </script>
+
 </body>
 
 </html>
